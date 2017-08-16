@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ProductNameTextView"
+            android:layout_weight="1"
+            android:padding="10dp"
+            tools:text="MSI Corsair GeForce GTX 1080 Hydro GFX Liquid Cooled 8GB"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:id="@+id/QuantityTextView"
+            android:layout_width="50dp"
+            tools:text="3"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:id="@+id/PriceTextView"
+            android:text="$"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_width="80dp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:text="Sale"
+                android:layout_height="wrap_content"
+                android:id="@+id/ListSaleButton"
+                android:layout_width="80dp"
+                android:background="@color/colorAccent"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
